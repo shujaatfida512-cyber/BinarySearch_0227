@@ -13,7 +13,7 @@ void input()
     {
         cout << "Enter the number of elements in the array (max 10): ";
         cin >> length;
-        if (length <= 10)
+        if (length <= 10 && length > 1)
         {
             break;
         }
