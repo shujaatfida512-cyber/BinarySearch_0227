@@ -60,3 +60,48 @@ void display()
 }
 
 void binarySearch()
+{
+    char repeat;
+    do
+    {
+        int low = 0;
+        int high = length - 1;
+        int mid;
+        bool found = false;
+
+        cout << "\n";
+        cout << " Binary Search \n";
+        cout << "==========================================\n";
+        cout << "Enter the element to search: ";
+        cin >> x;
+
+        while (low <= high)
+        {
+            mid = (low + high) / 2;
+
+            if (x == element[mid])
+            {
+                cout << "\n[] Element " << x << " found at index " << mid << ".\n";
+                found = true;
+                break;
+            }
+            else if (x < element[mid])
+            {
+                high = mid - 1;
+            }
+            else
+            {
+                low = mid + 1;
+            }
+        }
+
+        if (!found)
+        {
+            cout << "\n[] Element " << x << " not found in the array.\n";
+        }
+
+        cout << "\nSearch again? (y/n): ";
+        cin >> repeat;
+
+    } while (repeat == 'y' || repeat == 'Y');
+}
