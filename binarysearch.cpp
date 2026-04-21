@@ -24,4 +24,9 @@ void input()
     cout << "\n==========================================\n";
     cout << " Enter Array Elements \n";
     cout << "==========================================\n";
- 
+   for (int i = 0; i < length; i++)
+    {
+        cout << "Data-" << (i + 1) << " = ";
+        cin >> element[i];
+    }
+}
