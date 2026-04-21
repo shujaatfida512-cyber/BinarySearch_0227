@@ -105,3 +105,11 @@ void binarySearch()
 
     } while (repeat == 'y' || repeat == 'Y');
 }
+int main()
+{
+    input();
+    bubbleSortArray();
+    display();
+    binarySearch();
+    return 0;
+}
