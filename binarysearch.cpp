@@ -1,10 +1,12 @@
 #include <iostream>
 using namespace std;
 
+//global variables
 int element[10];
 int length;
 int x;
 
+// function prototypes
 void input()
 {
     while (true)
@@ -30,6 +32,7 @@ void input()
         cin >> element[i];
     }
 }
+// Function to sort the array using bubble sort 
 void bubbleSortArray()
 {
     int pass = 1;
@@ -47,6 +50,7 @@ void bubbleSortArray()
         pass++;
     } while (pass <= length - 1);
 }
+// Function to display the sorted array 
 void display()
 {
     cout << "\n==========================================\n";
@@ -58,7 +62,7 @@ void display()
     }
     cout << endl;
 }
-
+// Function to perform binary search on the sorted array
 void binarySearch()
 {
     char repeat;
@@ -105,6 +109,7 @@ void binarySearch()
 
     } while (repeat == 'y' || repeat == 'Y');
 }
+// Main function to execute the program
 int main()
 {
     input();
@@ -113,3 +118,4 @@ int main()
     binarySearch();
     return 0;
 }
+// End of program
