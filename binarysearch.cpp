@@ -47,3 +47,14 @@ void bubbleSortArray()
         pass++;
     } while (pass <= length - 1);
 }
+void display()
+{
+    cout << "\n==========================================\n";
+    cout << " Sorted Array Elements (Ascending) \n";
+    cout << "==========================================\n";
+    for (int j = 0; j < length; j++)
+    {
+        cout << element[j] << " ";
+    }
+    cout << endl;
+}
